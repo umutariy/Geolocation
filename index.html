@@ -7,24 +7,30 @@
     width: 100%;
   }
 </style>
+<!-- bootstrap link -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<icon src="res/icon/icon.jpg" platform="android" width="57" height="57" density="mdpi" />
+
 <script src="js/lib/jquery.js"></script>
 <!-- your scripts here -->
 <script src="js/app/app.js"></script>
 <script src="js/app/bootstrap.js"></script>
 <script src="js/lib/jquery.mobile.js"></script>
 </head>
+
+<!-- Body -->
 <body>
-  <h3>My Google Maps Demo</h3>
+  <h3>My Location</h3>
   <div id="map"></div>
   <button type="button" class="btn btn-primary btn-lg btn-block" onclick="onDeviceReady()">Find Me</button>
 
+<!-- script for the map -->
   <script>
     var latitude;
     var longtitude;
     var map;
     var marker;
-
+    // map function
     function initMap() {
      latitude = -25.363;
      longtitude = 131.044;
@@ -39,6 +45,8 @@
     });
    }
  </script>
+
+ <!-- google map API -->
  <script async defer
  src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA7h-ruFHpbEZBnODlYA4gWLrDhzmgkz4M &callback=initMap">
 </script>
